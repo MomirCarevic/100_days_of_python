@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / compiled files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+
+# Editor-specific files
+.idea/  # IntelliJ IDEA / PyCharm
+.vscode/ # VS Code
+*.sublime-project
+*.sublime-workspace
+
+# Build artifacts
+dist/
+build/
+*.egg
+
+# Test and coverage files
+.coverage
+htmlcov/
+.tox/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+tmp/
+
+# Dependency directories
+node_modules/
+venv/
+
+# Build artifacts
+build/
+dist/
+target/
+
+# Log files
+*.log
+
+# Environment variables
+.env
+
+# VS Code specific files
+.vscode/
+*.code-workspace
