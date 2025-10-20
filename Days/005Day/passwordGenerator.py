@@ -17,15 +17,13 @@ symbol_number = int(input("How many symbols would you like?\n"))
 number_number = int(input("How many numbers would you like?\n"))
 
 for number in range(0,letters_number) :
-    lettersSeed = random.randint(0,len(letters))
-    letters_new.append(letters[lettersSeed-1])
+    letters_new.append(random.choice(letters))
 
 for number in range(0,number_number) :
     numbers_new.append(random.choice(numbers))
 
 for number in range(0,symbol_number) :
-    symbolSeed = random.randint(0,len(symbols))
-    symbols_new.append(symbols[symbolSeed-1])
+    symbols_new.append(random.choice(symbols))
 
 password = letters_new + numbers_new + symbols_new
 random.shuffle(password)
