@@ -21,8 +21,7 @@ for number in range(0,letters_number) :
     letters_new.append(letters[lettersSeed-1])
 
 for number in range(0,number_number) :
-    numberSeed = random.randint(0,10)
-    numbers_new.append(numbers[numberSeed-1])
+    numbers_new.append(random.choice(numbers))
 
 for number in range(0,symbol_number) :
     symbolSeed = random.randint(0,len(symbols))
