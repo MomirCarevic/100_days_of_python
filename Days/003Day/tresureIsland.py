@@ -28,7 +28,7 @@ print(r"""
 which_way = input("Welcome to Treasure Island. Your mission is to find the treasure.\nYou are at a crossroad, wher do you go left or right?\n")
 
 if which_way == "Left" or which_way == "left" :
-    swim_wait = input("Do you swim or wait\n")
+    swim_wait = input("Do you swim or wait?\n")
     if swim_wait == "Wait" or swim_wait == "wait" :
         which_door = input("Which door color do you chose? Red, Blue or Yellow?\n")
         if which_door == "Red" :
@@ -36,7 +36,16 @@ if which_way == "Left" or which_way == "left" :
         elif which_door == "Blue" :
             print("You were burnt by fire, GAME OVER!")
         elif which_door == "Yellow" :
-            print("YOU WIN!\n")
+            print(r"""
+       _      _                   
+      (_)    | |                  
+__   ___  ___| |_ ___  _ __ _   _ 
+\ \ / / |/ __| __/ _ \| '__| | | |
+ \ V /| | (__| || (_) | |  | |_| |
+  \_/ |_|\___|\__\___/|_|   \__, |
+                             __/ |
+                            |___/ 
+            """)
         else :
             print("GAME OVER!\n")
     else:  
