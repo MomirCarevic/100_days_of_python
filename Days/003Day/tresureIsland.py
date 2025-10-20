@@ -3,7 +3,29 @@ Todays final project is to make Tresure Island game.
 Date: 20/10/2025
 
 '''
-which_way = input("Welcome to Treasure Island. Your mission is to find the treasure.\nYou are at a crossroad, wher do you go left or R right?\n")
+print(r"""
+                              .--.
+                        _.-'_:-'||
+                    _.-'_.-::::'||
+               _.-:'_.-::::::'  ||
+             .'`-.-:::::::'     ||
+            /.'`;|:::::::'      ||_
+           ||   ||::::::'     _.;._'-._
+           ||   ||:::::'  _.-!oo @.!-._'-.
+           \'.  ||:::::.-!()oo @!()@.-'_.|
+            '.'-;|:.-'.&$@.& ()$%-'o.'\U||
+              `>'-.!@%()@'@_%-'_.-o _.|'||
+               ||-._'-.@.-'_.-' _.-o  |'||
+               ||=[ '-._.-\U/.-'    o |'||
+               || '-.]=|| |'|      o  |'||
+               ||      || |'|        _| ';
+               ||      || |'|    _.-'_.-'
+               |'-._   || |'|_.-'_.-'
+               '-._'-.|| |' `_.-'
+                    '-.||_/.-' 
+""")
+
+which_way = input("Welcome to Treasure Island. Your mission is to find the treasure.\nYou are at a crossroad, wher do you go left or right?\n")
 
 if which_way == "Left" or which_way == "left" :
     swim_wait = input("Do you swim or wait\n")
