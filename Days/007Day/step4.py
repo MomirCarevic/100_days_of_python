@@ -14,6 +14,7 @@ print(chosen_word)
 numberOfLetters = len(chosen_word)
 
 while not win :
+    print(f"Number of lives: {lives}")
     guess = input("\nGuess a letter: ").lower()
     
     display = ""
