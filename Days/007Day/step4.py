@@ -1,14 +1,16 @@
 import random
+from hangman_words import word_list
+from hangman_art import stages
+from hangman_art import logo
 
-words_list = ["aardvark", "baboon", "camel"]
 ctr = 0
 win = False
 lose = False
 lives = 6
 correctLetter = []
 
-
-chosen_word = random.choice(words_list)
+chosen_word = random.choice(word_list)
+print(logo)
 print(chosen_word)
 
 numberOfLetters = len(chosen_word)
@@ -34,9 +36,11 @@ while not win :
             display += "_"
     
     print(display)
+    print(stages[lives-1])
 
     if guess not in chosen_word :
         lives -= 1
+        
         if lives == 0 :
             win = True
             print("YOU LOSE!\n")
