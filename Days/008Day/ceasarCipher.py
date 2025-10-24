@@ -2,14 +2,17 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 
 direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
 text = input("Type your message:\n")
-shift = input("Type the shift number:\n")
+shift = int(input("Type the shift number:\n"))
 
-# TODO-1 - Create a function called encrypt() that takes 'orginal_text' and 'shift_amount' as 2 inputs
+def encrypt(original_text,shift_amount) :
+    cipher_text =""
+
+    for letter in original_text :
+        shifted_position = alphabet.index(letter) + shift_amount
+        shifted_position %= len(alphabet)    #   makes sure that we are between 0-25
+        cipher_text += alphabet[shifted_position]
+
+    print(f"Encripted word is {cipher_text}") 
 
 
-
-# TODO-2 - Inside the encrypt function shift each letter of the original_text forward in the algorithm by the shift_amount and print the encrypted text. You can use index() for finding out postion of an intem in a list
-
-
-
-# TODO-3 - Call the enxrypt() function and pass the user inputs
+encrypt(original_text=text,shift_amount=shift)
