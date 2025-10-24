@@ -1,3 +1,10 @@
+def ceaser(direction,original_text,shift_amount) :
+    if direction == 'encode' :
+        #print(f"encode : shift amount {shift_amount}")
+        encrypt(original_text=original_text,shift_amount=shift_amount)
+    elif direction == 'decode' : 
+        decrypt(original_text=original_text,shift_amount=shift_amount)
+
 def encrypt(original_text,shift_amount) :
     cipher_text =""
 
@@ -26,6 +33,4 @@ text = input("Type your message:\n")
 shift = int(input("Type the shift number:\n"))
 
 
-
-encrypted_text = encrypt(original_text=text,shift_amount=shift)
-decrypt(original_text=encrypted_text,shift_amount=shift)
+ceaser(direction=direction,original_text=text,shift_amount=shift)
