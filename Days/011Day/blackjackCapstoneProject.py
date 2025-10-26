@@ -8,25 +8,28 @@ from art import logo
 cards = [11,2,3,4,5,6,7,8,9,10,10,10,10]
 result = True
 
+player_card = {}
+dealer_card = {}
+
 start_game = input("Do you want to play a game of Blackjack? Type 'yes' or 'no'\n")
 
 while start_game == 'yes' :
     system("cls")
     print(logo)
     
-    player_card1 = random.choice(cards)
-    player_card2 = random.choice(cards)
+    player_card[1] = random.choice(cards)
+    player_card[2] = random.choice(cards)
     
-    dealer_card1 = random.choice(cards)
-    dealer_card2 = random.choice(cards)
+    dealer_card[1] = random.choice(cards)
+    dealer_card[2] = random.choice(cards)
 
 
 
-    print(f"Player cards are [{player_card1}|{player_card2}]")
-    print(f"Dealer cards are [{dealer_card1}|##]")
+    print(f"Player cards are [{player_card[1]}|{player_card[2]}]")
+    print(f"Dealer cards are [{dealer_card[1]}|##]")
 
     choice = input("Do you want to pull another card?\n Type 'hit' or 'stand'\n")
-
+'''
     if choice == 'stand' :
         #check player cards
         playerSum = player_card1+player_card2
@@ -43,6 +46,10 @@ while start_game == 'yes' :
         else :
             result = False
         print(f"player result {playerSum} | dealer result {dealerSum} | {result}")
-        # check dealer cards  
+        
+    if choice == 'hit'
+
+        player_card1 = playerSum
 
     start_game = input("Do you want to play again? Type 'yes' or 'no'\n")
+'''
