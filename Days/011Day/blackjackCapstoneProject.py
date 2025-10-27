@@ -74,7 +74,11 @@ while start_game == 'yes' :
 
     start_game = input("Do you want to play again? Type 'yes' or 'no'\n")
 
-    #   RESETING VARIABLES #
+    if start_game == 'no' :
+        system("exit")
+
+    #   IF CONTINUING, RESET VARIABLES #
+    
     player_card = {}
     dealer_card = {}
     n = 3
